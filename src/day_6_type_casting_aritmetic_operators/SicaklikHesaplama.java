@@ -11,7 +11,7 @@ public class SicaklikHesaplama {
         // ℃=(℉-32) /1.8    (c*1.8)+32=f
         double c=36;
         double f=(c*1.8)+32;
-        System.out.println(c+" Celcius"+f+" fahrenheit=");
+        System.out.println(c+" Celcius"+f+" fahrenheit= ");
 
 
 
