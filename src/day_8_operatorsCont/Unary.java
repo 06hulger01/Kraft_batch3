@@ -52,14 +52,14 @@ public class Unary {
 //            9 +  10 +   9 + 9
         i = --i + ++i + --i + i;//37
         System.out.println("i = " + i);
-//          37  + 38  *  -37 *  -37
+//          37  + 38  *  -37 *  37
         i = i++ + i-- * -i++ * --i;
         System.out.println("i = " + i);
 
-//        51985 - 51986/51985 * 51986
-//        -51985 - -51984/-51984 * -51984
-        i = i++  -   i++/  --i  *  i++;
-        System.out.println(i);
+//        51985 - 51986/51986 * 51986 // 51985
+//        -51985 - -51984/ -51984 * -51984 //51985
+        i = i++  -   (i++/  --i  *  i++);
+        System.out.println(i);//-1
         System.out.println("-------------------");
 //        Example
 //        logical not
