@@ -97,11 +97,21 @@ public class Tasks {
         System.out.println("lütfen 2 sayı giriniz");
         int i = sc.nextInt();
         int i2 = sc.nextInt();
+        int init;
+        int cont;
+
 //        kullanıcıın girdiği sayıların buyuk
 //        kucuk denetimi yapılmalı ve kucuk olan
 //        j ye başlangıc degeri olarak atanmalı
+        if (i>i2){
+            init = i2;
+            cont = i;
+        }else{
+            init = i;
+            cont = i2;
+        }
         int multiplication = 1;
-        for (int j = i; j < i2; j++) {
+        for (int j = init; j < cont; j++) {
             System.out.println("j = " + j);
             multiplication*=j;
         }
