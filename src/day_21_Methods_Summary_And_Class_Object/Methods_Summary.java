@@ -1,5 +1,7 @@
 package day_21_Methods_Summary_And_Class_Object;
 
+import java.util.Scanner;
+
 public class Methods_Summary {
 
 
@@ -11,7 +13,6 @@ public class Methods_Summary {
     // f(x)=2x+5
 
     public static int f(int x){
-
        return 2*x+5;
     }
 
@@ -102,7 +103,7 @@ public class Methods_Summary {
 
     }
 */
-/*
+
     //verilen iki sayının ebob ini döndüren metodu yazınız?
     //
     public static int ebob(int x,int y){
@@ -129,9 +130,9 @@ public class Methods_Summary {
 
     }
 
-*/
-    //ekok metodunu ebopb metodu kullanmadan yapalım
 
+    //ekok metodunu ebopb metodu kullanmadan yapalım
+/*
     public static int ekok(int x,int y){
         int result=1;
         int i=2;
@@ -156,14 +157,78 @@ public class Methods_Summary {
 
     }
 
+    public static  int ekok2(int x,int y){
+
+        int max=x*y;  //18 30 540
+        int ekok=max;
+
+        for (int i = max; i >0 ; i--) {
+            if(i%x==0 && i%y==0){
+                ekok=i;
+            }
+
+        }
+        return ekok;
+
+
+    }
+
+    public static  int ekok3(int x,int y){
+
+
+        return (x*y)/ebob(x,y);
+
+    }
+*/
  //kullanıcının girdiği bir sayının binary olup olmadığını döndüren bir metod yazın
  // 1011100  true   10112011 false
 
 
 
-    public static void main(String[] args) {
+public static boolean isBinary(int x){
 
-        System.out.println(ekok(18, 30));
+
+    while (x>0){
+        int a=x%10;
+        if(a>1){
+            return false;
+        }
+        x=x/10;
+        }
+    return true;
+
+    }
+    //sayının içerinde binary olmayan kaç adet rakam var
+
+
+    public static int notBinaryCount(int x){
+
+int count=0;
+        while (x>0){
+            int a=x%10;
+            if(a>1){
+                count++;
+            }
+            x=x/10;
+        }
+        return count;
+
+    }
+
+
+
+    public static void main(String[] args) {
+      Scanner scan=new Scanner(System.in);
+      System.out.println ("--------Binary kontrolü-------- ");
+        System.out.print ("Lütfen bir sayı giriniz: ");
+        int x= scan.nextInt();
+       if(isBinary(x)){
+           System.out.println("sayınızın tüm rakamları binary");
+       }else{
+           System.out.println("sayınızda "+notBinaryCount(x)+" adet binary olmayan rakam var");
+       }
+
+
 
 
     }
