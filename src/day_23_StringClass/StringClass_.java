@@ -29,6 +29,33 @@ public class StringClass_ {
 
         System.out.println(message.concat(" değil mi?"));
 
+//contains()
+
+        System.out.println(message.contains("index"));
+        System.out.println(message.contains(" n"));
+        System.out.println(message.contains("x n"));
+        System.out.println(message.contains(" ct"));//false
+        System.out.println(message.contains(" "));
+        System.out.println(message.contains("c"));
+
+//trim()
+        String s = "    merhaba dünya     ";
+        System.out.println(s);
+        System.out.println(s.trim());
+        String trim = s.trim();
+        System.out.println(trim);
+
+//replace()
+        String replace = trim.replace("merhaba", "selam");
+        System.out.println(replace);
+
+//indexOf()
+        //selam dünya
+        int dünya = replace.indexOf("dünya");
+        System.out.println(dünya);
+
+        int dünya2 = replace.indexOf("düya");//bulamadığı dizilim için -1 dündürür.
+        System.out.println(dünya2);
 
     }
 
