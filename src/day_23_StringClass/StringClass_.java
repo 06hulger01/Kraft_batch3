@@ -57,6 +57,33 @@ public class StringClass_ {
         int dünya2 = replace.indexOf("düya");//bulamadığı dizilim için -1 dündürür.
         System.out.println(dünya2);
 
+//equalsIgnoreCase
+        System.out.println(" equals-----");
+        String st = "hello";
+        String st2 = "hello";
+        String st3 = "HELLO";
+
+        System.out.println(st.equals(st2));//true
+        System.out.println(st.equals(st3));//false
+        System.out.println(st.equalsIgnoreCase(st3));//true
+
+
+        System.out.println(" isEmpty-----");
+//        isEmpty()
+        String empty = "";
+//        empty = " ";
+        System.out.println(empty.isEmpty());
+
+        System.out.println(" substring-----");
+//        substring()
+
+        String main = "Merhaba java insanları";
+        String substring = main.substring(5);
+        System.out.println(substring);
+        String substring1 = main.substring(5, 10);
+        System.out.println(substring1);
+
+
     }
 
 }
