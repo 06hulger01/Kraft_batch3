@@ -6,6 +6,9 @@ public class Person {
     String name;
     String gender;
     int age;
+    boolean isLisans;
+    double bankAccount;
+    char size;
 
     public String sleep(){
         String a="Uyuyor";

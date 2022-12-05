@@ -11,7 +11,7 @@ public class MyFirstClass {
         kullanici_2.name="Zafer";
 
         System.out.println(kullanici_1.name+" ile "+ kullanici_2.name+" saklanbaç oyunuyorlar"); */
-
+/*
 
         Car car_1=new Car();
         Car car_2=new Car();
@@ -34,6 +34,6 @@ public class MyFirstClass {
 
         System.out.println(car_3.brand);
 
-
+*/
     }
 }
