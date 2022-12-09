@@ -16,7 +16,7 @@ public class String_Lab_Cont {
             result+=str.charAt(i);  //e ş y A
         }
         System.out.println(result);
-
+;
         //Merhaba
         //0123456
         // 3

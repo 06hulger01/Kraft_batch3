@@ -5,6 +5,7 @@ public class Car {
     String model;
     String color;
     int speed;
+    int length;
 
     public void accelerate(){
         System.out.println("araç hızlanıyor");
