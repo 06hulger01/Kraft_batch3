@@ -167,7 +167,99 @@ public class Arrays_And_String_Summary {
     // kelimenizin içinde bu harfin hepsi kaldırılmış şekilde string döndüren programı yazınız.
     //Array kullanarak
 
+    public  static  String kelimeharf(String str,String harf){
+        String result ="";
+        String[] arr =str.split("");
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i].equals(harf)){
+                arr[i]="";
+            }result+=arr[i];
+
+        }return result;
+    }
+
+    public  static  String kelimeharf2(String str,String harf){
+        String result ="";
+        String[] arr =str.split("");
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i].equals(harf)){
+                continue;
+            }
+            result+=arr[i];
+
+        }return result;
+    }
+    public  static  String kelimeharf3(String str,String harf){
+       // Merhaba  Merh b
+        String result ="";
+        String[] arr =str.split(harf);
+        for (int i = 0; i < arr.length; i++) {
+            result+=arr[i];
+        }return result;
+    }
+
+    public static String[] arayChange(String[] arr){
+
+String[] array2=Arrays.copyOf(arr,arr.length);
+
+        for (int i = 0; i < array2.length ; i++) {
+           array2[i]="1";
+        }
+        return array2;
+    }
+//Kullanıcının konsoldan ad ve soyad
+// bilgilerini konsoldan alın Ekrana "Soy isminiz ..(soyad).. dır." Yazan metodu yazınız.
+    // önce string ile sonrasında array ile çözümünü yapınız.
+
+    public static String surName(String str){
+        String str2=str.trim();
+        // Harun can aslantaş
+        int count=0;
+        for (int i = 0; i <str2.length() ; i++) {
+            if(str2.substring(i,i+1).equals(" ")){
+                count=i;
+            }
+        }
+        return str2.substring(count+1);
+    }
+
+
+    public static String surName2(String str){
+        String str2=str.trim();
+     return str2.substring(str2.lastIndexOf(" ")+1);
+
+    }
+
+    public  static String surNameArray(String str){
+
+        return str.trim().split(" ")[str.trim().split(" ").length-1];
+    }
+
+    public  static String surNameArray2(String str){
+    String[] arr=str.trim().split(" ");
+      return arr[arr.length-1];
+    }
+
+
+    // Haruna
+    // 012345
+
     public static void main(String[] args) {
+
+        String str="Harun can aslantaş";
+        System.out.println(surNameArray2(str));
+
+
+        // String[] array={"harun","mehmet","ahmet"};
+      // String[] array2=Arrays.copyOfRange(array,1,8);
+      //  System.out.println(Arrays.toString(array2));
+
+
+     //   int[][] arrTwo={ {10,20},{30,40,50},{60,70,80,90,100} };
+       // System.out.println(arrTwo[0][1]);
+
+        // System.out.println(array[0].equals("harun"));
+
 
        /* String str="uzun kollu gömlek L bden Fiyat:5000";
         String str2="Kısa kollu gömlek M bden Fiyat:5000";
@@ -176,7 +268,7 @@ public class Arrays_And_String_Summary {
 
         System.out.println(replaceThree("adanada ayran iç", "a", "e")); */
 
-        System.out.println(Arrays.toString(replaceArray("adanada ayran iç", "a", "e")));
+        //System.out.println(Arrays.toString(replaceArray("adanada ayran iç", "a", "e")));
 
     }
 
