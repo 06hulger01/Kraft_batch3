@@ -3,6 +3,7 @@ package day_32_Arrays_Lab_Cont;
 import day_31_Arrays_Lab.Arrays_Lab;
 
 import java.util.Arrays;
+import java.util.Random;
 
 public class Arrays_Lab_Cont {
 
@@ -141,11 +142,6 @@ public static int[] newArrayCreate(int[] arr){  // 5  8    5 , 6 ,7, 8
         return count==arr1.length;
     }
 
-
-
-
-
-
     public static boolean arrayVar2(int[] ar1, int ar2[]){
         boolean result=false;
         for (int i = 0; i < ar1.length; i++) {
@@ -162,13 +158,67 @@ public static int[] newArrayCreate(int[] arr){  // 5  8    5 , 6 ,7, 8
         }
         return true;
     }
+
+
+    //Boyutu 10 olan bir array oluşturun ve içerisine Random
+    // sınıfını kullanarak 0-100 arasında rasgele sayılar
+    // atayın ve ekrana bu verileri yazdıran metodu yazınız.
+
+    public static int[] randomArray(int boyut){
+        int[] newArray=new int[boyut];
+        Random random=new Random();
+
+        for (int i = 0; i <boyut ; i++) {
+            newArray[i]=random.nextInt(100);
+
+        }
+        return sortArray(newArray);
+
+
+    }
+
+
+//boyutu kullanıcıdan alın bir array oluşturun ve içerisine Random
+// sınıfını kullanarak 50-80 arasında rasgele sayılar atayın.
+
+    public static int[] randomArray2(int boyut){
+        int[] newArray=new int[boyut];
+        Random random=new Random();
+
+        for (int i = 0; i <boyut ; i++) {
+            // 0,1,2,3,4,5,6,7,,,,,,,,,,     50,     80
+            newArray[i]=random.nextInt(30)+50;
+
+        }
+        return sortArray(newArray);
+
+
+    }
+
+
+    //boyutu kullanıcıdan alın bir array oluşturun ve içerisine Random
+// sınıfını kullanarak 120-150 arasında rasgele sayılar atayın.
+    public static int[] randomArray3(int boyut){
+        int[] newArray=new int[boyut];
+        Random random=new Random();
+
+        for (int i = 0; i <boyut ; i++) {
+            // 0,1,2,3,4,5,6,7,,,,,,,,,,     50,     80
+            newArray[i]=random.nextInt(30)+120;
+                                          //fark   min
+        }
+        return sortArray(newArray);
+
+
+    }
+
+
     public static void main(String[] args) {
 
-        int[] arr={1,2,1};
-        int[] arr2={1,2,2,3};
-        System.out.println(isContainArray2(arr, arr2));
-
-
+        int[] arr={3,6,2,8};
+       // int[] arr2={1,2,2,3};
+       // System.out.println(isContainArray2(arr, arr2));
+        Arrays_Lab.arrayYazdir(randomArray(10));
         //  System.out.println(Arrays.toString(arr));
     }
 
