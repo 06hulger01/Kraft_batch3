@@ -109,14 +109,67 @@ public static int[] newArrayCreate(int[] arr){  // 5  8    5 , 6 ,7, 8
     //2 array kabul eden, ilk array in içerindeki tüm sayılar ikinci arrayin
     // içinde yer alıyorsa true yer almıyorsa false yazdıran metodu yazınız.
 
+    public static boolean isContainArray(int[] arr1,int[] arr2){
+
+
+      firstLoop:  for (int i = 0; i < arr1.length; i++) {
+
+                         for (int j = 0; j < arr2.length ; j++) {
+                                     if(arr1[i]==arr2[j]){
+                                        continue firstLoop;
+                                        }
+                        }
+                         return false;
+
+                     }
+                     return true;
+    }
+
+    public static boolean isContainArray2(int[] arr1,int[] arr2){
+        int count=0;
+
+         for (int i = 0; i < arr1.length; i++) {
+
+            for (int j = 0; j < arr2.length ; j++) {
+                if(arr1[i]==arr2[j]){
+                    count++;
+                   break ;
+                }
+            }
+
+        }
+        return count==arr1.length;
+    }
+
+
+
+
+
+
+    public static boolean arrayVar2(int[] ar1, int ar2[]){
+        boolean result=false;
+        for (int i = 0; i < ar1.length; i++) {
+            for (int j = 0; j < ar2.length; j++) {
+                result=false;
+                if(ar1[i]==ar2[j]){
+                    result=true;
+                    break;
+                }
+            }
+            if(result==false){
+                return false;
+            }
+        }
+        return true;
+    }
     public static void main(String[] args) {
 
-        int[] arr={1,5,4};
-        int[] arr2={2,7,16,6};
-        Arrays_Lab.arrayYazdir(twoInOne(arr,arr2));
+        int[] arr={1,2,1};
+        int[] arr2={1,2,2,3};
+        System.out.println(isContainArray2(arr, arr2));
 
 
-      //  System.out.println(Arrays.toString(arr));
+        //  System.out.println(Arrays.toString(arr));
     }
 
 
