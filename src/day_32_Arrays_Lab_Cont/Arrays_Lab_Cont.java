@@ -56,6 +56,7 @@ public static int[] newArrayCreate(int[] arr){  // 5  8    5 , 6 ,7, 8
         return reverseArray(sortArray(newArray));
     }
 
+
     public static int[] concatArrays(int[] arr1,int[] arr2){
         int[] newArray=new int[arr1.length+arr2.length];
 
@@ -102,6 +103,11 @@ public static int[] newArrayCreate(int[] arr){  // 5  8    5 , 6 ,7, 8
         }
         return newArray2;
     }
+
+
+
+    //2 array kabul eden, ilk array in içerindeki tüm sayılar ikinci arrayin
+    // içinde yer alıyorsa true yer almıyorsa false yazdıran metodu yazınız.
 
     public static void main(String[] args) {
 
