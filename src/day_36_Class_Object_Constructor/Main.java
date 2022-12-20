@@ -35,7 +35,9 @@ public class Main {
         System.out.println("ogrenci1.okul = " + ogrenci1.okul);
         System.out.println("ogrenci2.okul = " + ogrenci2.okul);
 */
-        System.out.println("Math2.pow(2,3) = " + Math2.pow(2, 3));
-        System.out.println("Math2.max(50,60) = " + Math2.max(50, 60));
+        //System.out.println("Math2.pow(2,3) = " + Math2.pow(2, 3));
+       // System.out.println("Math2.max(50,60) = " + Math2.max(50, 60));
+        Ogrenci ogrenci1=new Ogrenci("harun","koc","12311");
+        Ogrenci ogrenci2=new Ogrenci();
     }
 }

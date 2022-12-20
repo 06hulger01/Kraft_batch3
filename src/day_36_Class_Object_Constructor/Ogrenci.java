@@ -10,10 +10,23 @@ public class Ogrenci {
     int fakulteNo;
     double yilSonuNotu;
 
+    public Ogrenci(String ad,String soyad,String tc){
+      this.ad=ad;
+      this.soyad=soyad;
+      this.tc=tc;
+    }
+    public Ogrenci(){
 
-    public boolean sinifiGectiMi(){
-        if(yilSonuNotu<65){
+    }
+
+    public Ogrenci(String ad){
+        this.ad=ad;
+    }
+
+    public  boolean sinifiGectiMi(){
+        if(this.yilSonuNotu<65){
             return false;
+
         }
             return true;
     }
