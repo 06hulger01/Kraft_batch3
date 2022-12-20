@@ -25,6 +25,12 @@ public class A {
         return this.x;
 
     }
+    public int addX(int z){
+        this.b();
+        this.x+=z;
+        return this.x;
+    }
+
 
 
 }
