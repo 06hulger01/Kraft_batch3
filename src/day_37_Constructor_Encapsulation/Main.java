@@ -11,7 +11,7 @@ public class Main {
      //   A nesne_2=new A(55);
       //  A nesne_3=new A(63,74);
        // System.out.println("nesne_3.y = " + nesne_3.y);
-
+/*
       KraftBank mehmet=new KraftBank("Mehmet bey",22678914);
         KraftBank harun=new KraftBank("Harun bey",22678915);
       mehmet.paraEkle(50);
@@ -25,6 +25,13 @@ public class Main {
         System.out.println("faizHesapla(mehmet,20) = " + faizHesapla(mehmet, 20));
         System.out.println("mehmet.bakiye = " + mehmet.bakiye);
         System.out.println("faizAl(mehmet,20).musteriAd = " + faizAl(mehmet, 20).musteriAd);
+*/
+
+        Ogrenci ogrenci_1=new Ogrenci("1233445322");
+        ogrenci_1.setAd("mehmet");
+        System.out.println("ogrenci_1.getAd() = " + ogrenci_1.getAd());
+        ogrenci_1.setOkulNo("Ankara83",55);
+        System.out.println("ogrenci_1.getOkulNo() = " + ogrenci_1.getOkulNo());
 
     }
 
