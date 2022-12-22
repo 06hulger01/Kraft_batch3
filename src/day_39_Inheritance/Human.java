@@ -33,7 +33,7 @@ class test{
         Human human = new Human();
         human.name();
 //        human.role(); //erişemez
-//        man.activity(); //erişemez
+//        human.activity(); //erişemez
 
 
     }
