@@ -1,8 +1,10 @@
 package day_37_Constructor_Encapsulation;
 
+import day_41_inheritanceAndAccesModifier.Person;
+
 import java.awt.*;
 
-public class Main {
+public class Main extends  Person {
 
     public static void main(String[] args) {
        // A nesne_1=new A(63,76);
@@ -32,6 +34,10 @@ public class Main {
         System.out.println("ogrenci_1.getAd() = " + ogrenci_1.getAd());
         ogrenci_1.setOkulNo("Ankara83",55);
         System.out.println("ogrenci_1.getOkulNo() = " + ogrenci_1.getOkulNo());
+
+        //Person person=new Person();
+
+
 
     }
 

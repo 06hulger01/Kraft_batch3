@@ -1,6 +1,8 @@
 package day_37_Constructor_Encapsulation;
 
-public class Ogrenci {
+import day_41_inheritanceAndAccesModifier.Person;
+
+public class Ogrenci  {
 
    private String ad;
    private int okulNo;
@@ -25,6 +27,7 @@ public class Ogrenci {
   }
 
   public int getOkulNo(){
+
       return this.okulNo;
   }
 

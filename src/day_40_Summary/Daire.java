@@ -1,5 +1,7 @@
 package day_40_Summary;
 
+import day_41_inheritanceAndAccesModifier.Person;
+
 public class Daire {
 
     public static final double PI=3.14;
