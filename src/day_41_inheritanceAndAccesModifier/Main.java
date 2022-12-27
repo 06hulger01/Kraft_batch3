@@ -1,5 +1,7 @@
 package day_41_inheritanceAndAccesModifier;
 
+import day_42_Final_And_Hidding.A;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -29,13 +31,6 @@ car.start();
 
 
 
-
-
-
-
-
-
-
-
     }
+
 }

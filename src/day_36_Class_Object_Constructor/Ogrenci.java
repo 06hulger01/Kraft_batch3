@@ -1,5 +1,7 @@
 package day_36_Class_Object_Constructor;
 
+
+
 public class Ogrenci {
     String okul="İstanbul Ünversitesi";
     String tc;
@@ -33,6 +35,7 @@ public class Ogrenci {
 
     public int getOgrenciYili(){
      //   String str=String.valueOf(okulNo);
+
         return  2000+Integer.parseInt(String.valueOf(okulNo).substring(0,2));
 
     }
