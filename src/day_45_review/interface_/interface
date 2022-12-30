@@ -1,0 +1,22 @@
+Abstraction
+interface
+support multiple inheritance
+
+variable:
+public static final
+
+Method:
+    empty body
+    public abstract
+
+    others
+    default ---java 8 den itibaren
+    static ---java 8 den itibaren
+    private ---java 9 dan itibaren
+
+
+class implements interface,interface,.....
+interface extends interface,interface,.....
+
+multiple inheritance is not supported between classes
+

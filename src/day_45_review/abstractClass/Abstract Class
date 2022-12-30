@@ -1,0 +1,15 @@
+Abstraction
+
+1-abstract class dan nesne üretemeyiz
+2-abstract method a implementasyon yapılamaz body yok
+3-ilk concret class implementasyonu yapmak zorunda. abstract methodlar override yapılmak zorunda
+4-abstract class da non abstract method olabilir
+5-abstrac class a constractor ekleneblir
+6-abstrac class a static uyeler eklenebilir
+7-abstract class baska bir abstrac classa extends olabilir
+8-abstract classa extend olan abstrac clasın parent class daki abstract methodları override yapma zorunluuğu yoktur
+        -everride ancak yapabilir. child olan abstract class extend olan  concret class ın yapmasına gerek kalmaz
+9-abstract methodlar final olamaz
+10-abstarct methodlar private olamaz
+11-abstract classlar statc olamaz.
+12-abstract class lar protcted olabilir.
