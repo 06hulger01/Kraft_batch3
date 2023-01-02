@@ -18,6 +18,7 @@ public abstract class Personel extends Library {
 
     }
 
-    public abstract void addPersonel();
+
+
 
 }

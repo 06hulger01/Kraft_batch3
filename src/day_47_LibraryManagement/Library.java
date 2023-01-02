@@ -4,7 +4,14 @@ import java.util.ArrayList;
 
 public abstract class Library {
 
-    ArrayList<Personel> totalPersonel=new ArrayList<>();
-    ArrayList<Book> books=new ArrayList<>();
+   static ArrayList<Personel> totalPersonel=new ArrayList<>();
+   static   ArrayList<Book> books=new ArrayList<>();
+
+
+    public abstract void addPersonel();
+    public abstract void getAllPersonel();
+    public static void addPersonel(Personel personel) {
+        totalPersonel.add(personel);
+    }
 
 }

@@ -9,6 +9,8 @@ public class LibraryPersonel extends Personel{
         super(fullName, personelType);
     }
 
+
+
     @Override
     public void addPersonel() {
 
@@ -29,16 +31,23 @@ public class LibraryPersonel extends Personel{
             String fullName= scan.nextLine();
             Personel admin=new LibraryPersonel(fullName,"Admin");
             totalPersonel.add(admin);
-        }else {
+        }else if(secim==3) {
             System.out.println("Ekleme sayfasından çıkılıyor");
+            return;
+        }else {
+            System.out.println("hatalı giriş 1-2-3 değerlerinden birini seçiniz");
         }
-
-        System.out.println("Personel eklemeye devam etmek istiyor musunuz (Evet/Hayır)");
-        System.out.print("seçim: "); String secim2=scan.next();
-        if(secim2.equalsIgnoreCase("evet")){
             addPersonel();
-        }
 
+
+
+    }
+
+    @Override
+    public void getAllPersonel() {
+        for (Personel personel:totalPersonel) {
+            System.out.println(personel.personelId+" "+personel.fullName+" "+personel.personelType);
+        }
 
     }
 }

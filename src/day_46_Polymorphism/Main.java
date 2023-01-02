@@ -17,11 +17,20 @@ public class Main {
       obje1.sleep(); */
      //   System.out.println("obje1.x = " + obje1.x);
 
-        Personel personel=new Developer();
+       /* Personel personel=new Developer();
         personel.work();
         Personel personel1=new Tester();
         personel1.work();
+        System.out.println("personel1.getClass() = " + personel1.getClass());
+        System.out.println("personel1.getClass().getName() = " + personel1.getClass().getName());
+        System.out.println("personel1.getClass().getSimpleName() = " + personel1.getClass().getSimpleName());
+        System.out.println("personel1.getClass().getConstructors().length = " + personel1.getClass().getConstructors().length);
+        Tester tester = personel1 instanceof Developer ? ((Tester) personel1) : null; */
 
+        Personel personel=new Tester();
+        personel.work();
+        Tester tester=(Tester)personel;
+        tester.raporlamaYap();
 
     }
 

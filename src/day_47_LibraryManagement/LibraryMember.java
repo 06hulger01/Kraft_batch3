@@ -11,4 +11,9 @@ public class LibraryMember extends Personel {
     public void addPersonel() {
         System.out.println("Üyelerin personel ekleme yetkisi yoktur");
     }
+
+    @Override
+    public void getAllPersonel() {
+        System.out.println("Üyelerin personel Listeleme yetkisi yoktur");
+    }
 }
