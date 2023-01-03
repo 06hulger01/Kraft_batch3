@@ -1,5 +1,7 @@
 package day_46_Polymorphism;
 
+import day_47_OOP_Summary.Animal;
+
 import java.sql.Driver;
 import java.util.ArrayList;
 
@@ -32,10 +34,15 @@ public class Main {
         Tester tester=(Tester)personel;
         tester.raporlamaYap();
 
+
     }
 
 
     public  int sum(int x,int y){
+
+
+
+
         return x+y;
     }
     public static int sum(int x,int y,int z){
