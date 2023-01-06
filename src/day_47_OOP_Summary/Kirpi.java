@@ -2,6 +2,7 @@ package day_47_OOP_Summary;
 
 public class Kirpi extends  Etcil{
     int dikenSayisi;
+
    Kirpi() {
 
     }
