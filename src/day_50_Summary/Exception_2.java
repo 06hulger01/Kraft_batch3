@@ -7,11 +7,11 @@ public class Exception_2 {
         System.out.print("Yükleniyor");
         try {
             for (int i = 0; i <10 ; i++) {
-                Thread.sleep(1000);
+              //  Thread.sleep(1000);
                 System.out.print(" .");
             }
-        }catch (java.lang.Exception e){
-            System.out.println("hata");
+        }catch (NumberFormatException | IllegalThreadStateException e){
+
         }
 
 
