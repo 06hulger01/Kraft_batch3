@@ -22,7 +22,7 @@ public class Collection_List_Example_2 {
 
         //Kullanıcıdan alınan 3 adet notun ortalamasını veren metodu yazınız. List
 
-        List<Integer> list= Arrays.asList(30,40,50);
+       List<Integer> list= Arrays.asList(30,40,50);
         System.out.println(ortalama(list));
 
 
