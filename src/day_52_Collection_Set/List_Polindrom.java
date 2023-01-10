@@ -15,7 +15,7 @@ public class List_Polindrom {
 
 
         List<String> list=Arrays.asList("kaşık","adanada","kazak","radar","ses","harun","ses");
-        polindromKelimeBul4(list);
+        polindromKelimeBul5(list);
 
     }
 
