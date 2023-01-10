@@ -30,7 +30,9 @@ public class List_Polindrom {
             }
             if(str.equalsIgnoreCase(reverse)){
                 System.out.println(str+" ");
-                //removeAll-remove ikisinden biri
+                List<String> newList=new ArrayList<>(Arrays.asList(str));
+                list.removeAll(newList);
+                i--;
             }
         }
 
