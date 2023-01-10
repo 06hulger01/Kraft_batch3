@@ -14,29 +14,30 @@ public class List_Polindrom {
         // eşit olan kelimeler) kelimeleri ekrana yazdıran metodu yazınız.(aynı kelimeleri ekrana yazma-sın)
 
 
-        List<String> list=Arrays.asList("kaşık","adanada","kazak","radar","ses","harun","ses");
+        List<String> list=new ArrayList<>(Arrays.asList("kaşık","adanada","kazak","radar","ses","harun","ses"));
+
+
         polindromKelimeBul5(list);
 
     }
 
 //removeAll metodunu kullanın containns kullanmayın 15 dk ara
-    public static void polindromKelimeBul5(List<String> list){
-
-        for (int i = 0; i < list.size(); i++) {
-            String str = list.get(i);
-            String reverse = "";
-            for (int j = str.length()-1; j >=0;  j--) {
-                reverse+=str.charAt(j);
-            }
-            if(str.equalsIgnoreCase(reverse)){
-                System.out.println(str+" ");
-                List<String> newList=new ArrayList<>(Arrays.asList(str));
-                list.removeAll(newList);
-                i--;
-            }
+public static void polindromKelimeBul5(List<String> list){
+    for (int i = 0; i < list.size(); i++) {
+        String str = list.get(i);
+        String reverse = "";
+        for (int j = str.length()-1; j >=0;  j--) {
+            reverse+=str.charAt(j);
         }
+        if(str.equalsIgnoreCase(reverse)){
+            System.out.print(str+" ");
+            list.removeAll(Arrays.asList(str));
+            i--;
 
+        }
     }
+
+}
 
     public static void polindromKelimeBul4(List<String> list){
         List<String> newList=new ArrayList<>();
