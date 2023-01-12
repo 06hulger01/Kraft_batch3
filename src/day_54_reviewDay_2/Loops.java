@@ -24,7 +24,7 @@ public class Loops {
         //2-ilk boşlukta kodum kesilmeli
         String reverse = "";
         int i = message.length() - 1;
-
+//         ---1
         for (i = i; i >= 0; i--) {
             if (message.charAt(i) == ' ') {
                 break;
@@ -33,20 +33,23 @@ public class Loops {
                 reverse += message.charAt(i);
             }
         }
-        System.out.println("reverse = " + reverse);
-//        ---
+        System.out.println("reverse 1 = " + reverse);
+//        ---2
         reverse = "";
+        i = message.length() - 1;
         for (i = i; i >= 0; i--) {
 
             if (message.charAt(i) != ' ') {
                 reverse += message.charAt(i);
+
             }else{
                 break;
             }
         }
-        System.out.println("reverse = " + reverse);
-//        ---
+        System.out.println("reverse 2 = " + reverse);
+//        ---3
         reverse = "";
+        i = message.length() - 1;
         for (i = i; i >= 0; i--) {
 
             if (message.charAt(i) == ' ') {
@@ -55,9 +58,9 @@ public class Loops {
                 reverse += message.charAt(i);
             }
         }
-        System.out.println("reverse = " + reverse);
+        System.out.println("reverse 3 = " + reverse);
 
-//        while
+//        using while
         message = "elveda java dersleri";
         reverse = "";
 
@@ -66,27 +69,33 @@ public class Loops {
             reverse += message.charAt(i);
             i--;
         }
+        System.out.println("reverse with while = " + reverse);
 
 //        using array
         String[] s = message.split(" ");
         System.out.println("s.length = " + s.length);
         System.out.println("s[s.length-1] = " + s[s.length - 1]);
 
+        reverse = "";
         //karmaşık okuması zor
         for (int j = s[s.length-1].length()-1; j >=0 ; j--) {
             reverse += s[s.length-1].charAt(j);
         }
+        System.out.println("reverse with array_1 = " + reverse);
 
+//      ------
+
+        reverse = "";
         String s1 = s[s.length - 1];
         //daha sade daha okunur daha guzel
         for (int j = s1.length()-1; j >=0 ; j--) {
             reverse += s1.charAt(j);
         }
-        System.out.println("reverse = " + reverse);
+        System.out.println("reverse with array_2 = " + reverse);
 
 
-//        ------------
-//        do while
+
+//        do while------------------------------
         String color = "blue";
         int count = 0;
         do{
@@ -94,7 +103,7 @@ public class Loops {
             System.out.println("do it");
         }while (color.equals("red") && count<10);
 
-//        break an continue
+//        break an continue-----------------------------------
 
 //        kullancıdan bir sayı aralığı alın
 //        1- 7 ye tam bolunen sayıya kadar azalan şekilde yazdırın
@@ -115,6 +124,7 @@ public class Loops {
                 System.out.println(" "+j);
         }
 
+//          label------------------------------------
 //        label works with break and continue
 //        verilen aralıktaki prime numberları bulalım
 
