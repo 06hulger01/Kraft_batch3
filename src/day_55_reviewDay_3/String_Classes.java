@@ -1,4 +1,4 @@
-package day_55_review_3;
+package day_55_reviewDay_3;
 
 public class String_Classes {
     public static void main(String[] args) {
